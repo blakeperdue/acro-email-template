@@ -1,6 +1,6 @@
 # Acrobatiq Email Templates
 
-<img src="https://github.com/blakeperdue/acro-email-template/blob/acro/preview.png?raw=true" alt="preview" width="500">
+<img src="https://github.com/blakeperdue/acro-email-template/blob/acro/preview2.png?raw=true" alt="preview" width="500">
 
 This is a really simple and easy to create and maintain HTML email template system. It should make creating and managing our email templates easier, while also providing modern, responsive emails that will render and perform better across devices.
 
