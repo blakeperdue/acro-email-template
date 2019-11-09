@@ -1,30 +1,24 @@
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8N47UXGWGZUY4)
+# Acrobatiq Email Templates
 
-# Free Responsive Simple HTML Email Template
+<img src="https://github.com/blakeperdue/acro-email-template/blob/acro/preview.png?raw=true" alt="Simple HTML Email" width="500">
 
-Sometimes all you want is a really simple responsive HTML email template with a clear call-to-action button. Here it is.
+This is a really simple and easy to create and maintain HTML email template system. It should make creating and managing our email templates easier, while also providing modern, responsive emails that will render and perform better across devices.
 
-[See live preview](http://leemunroe.github.io/responsive-html-email-template/email.html).
+# How to create a new template
 
-<img src="https://user-images.githubusercontent.com/15963/29055956-8dcca38e-7bb4-11e7-8a86-7b056ebf673d.png" alt="Simple HTML Email" width="500">
+Copy the `email.html` master template and name it as a new file, such as `email-password-reset.html` for example.
+
+Next, replace the template variables, which can be found in ``{{ }}` variables inside the code. You can load the HTML file in your browser to test how it looks and functions. 
+
+*Remember* to update the first variable in the template `{{email text preview goes here}}` with a short sentence. This is what will appear in email clients as the text preview of the email. This should be similar to the email subject but provide more details.
 
 ## Inline your CSS before sending
 
-Email is notorious for inconsistent CSS support. Therefore you should always inline your CSS before sending.
+Once you have finalized your template, you need to inline the CSS styles. The master `email.html` file has styles in the head of the document. To make the template work in email clients, you need to process the template to inline the styles.
 
-### Sending emails directly from your codebase or using a developer service?
+I prefer [Juice](http://automattic.github.io/juice/) but there are many available. They key is to inline the styles and create a new file and append the `__inlined` to the file name. So, `email-password-reset.html` would become `email-password-reset__inlined.html`. This way, you can be clear about which file is the template, and which file has been inlined and is ready for use.
 
-For an API service (like Mailgun, SendGrid, Postmark) **you need to inline the CSS before sending**. See `email-inlined.html` for an example.
-
-You can use this [Email CSS Inliner](https://htmlemail.io/inline/) or a module like [Juice](https://github.com/Automattic/juice) to do this automatically.
-
-* Copy all of email.html
-* Paste the HTML as the source into the inliner
-* Copy the HTML output and use this as the email template you send
-
-### Sending emails using a marketing service like Mailchimp?
-
-Use the template `email.html` as is. They'll put the CSS inline for you when you put together your campaign.
+We do it this way because it's way easier to update the styles and content in the master template before the styles have been inlined.
 
 ## Images in email
 
@@ -42,20 +36,6 @@ Example:
 
 [More information here](https://www.smashingmagazine.com/2017/01/introduction-building-sending-html-email-for-web-developers/)
 
-## Tried and tested on all major email clients
+# Original Source
 
-Tested on mobile, desktop and web.
-
-![Templates Tested on Email Clients](https://cloud.githubusercontent.com/assets/15963/17391543/bc289abe-59cb-11e6-9946-605a85f8c522.jpg)
-
-[See the Litmus test results](https://litmus.com/checklist/emails/public/233ded7).
-
-## More HTML email resources
-
-* [10 HTML Email Templates for Developers](https://htmlemail.io)
-* [An Introduction To Building And Sending HTML Email](https://www.smashingmagazine.com/2017/01/introduction-building-sending-html-email-for-web-developers/)
-* [Grunt Email Design Workflow](https://github.com/leemunroe/grunt-email-design)
-* [Everything Web Developers Need To Know About Transactional Email](https://webdesign.tutsplus.com/articles/everything-developers-need-to-know-about-sending-transactional-email--cms-31759)
-
-This free template is part of a pack of responsive email templates for developers and startups available on [HTML Email](https://htmlemail.io).
-[![image](https://user-images.githubusercontent.com/15963/49354042-c0bcb800-f675-11e8-92ef-7e9987b85bf6.png)](https://htmlemail.io)
+This repo is a clone of [responsive-html-email-template](https://github.com/leemunroe/responsive-html-email-template). You can visit that repo to learn more about the templates and how to update them.
