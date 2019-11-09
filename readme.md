@@ -8,11 +8,11 @@ This is a really simple and easy to create and maintain HTML email template syst
 
 Copy the `email.html` master template and name it as a new file, such as `email-password-reset.html` for example.
 
-Next, replace the template variables, which can be found in ``{{ }}` variables inside the code. You can load the HTML file in your browser to test how it looks and functions. 
+Next, replace the template variables, which can be found in `{{ }}` variables inside the code. You can load the HTML file in your browser to test how it looks and functions. 
 
 <img src="https://github.com/blakeperdue/acro-email-template/blob/acro/preview-vars.png?raw=true" alt="preview of variables" width="500">
 
-*Remember* to update the first variable in the template `{{email text preview goes here}}` with a short sentence. This is what will appear in email clients as the text preview of the email. This should be similar to the email subject but provide more details.
+**Remember** to update the first variable in the template `{{email text preview goes here}}` with a short sentence. This is what will appear in email clients as the text preview of the email. This should be similar to the email subject but provide more details.
 
 ## Inline your CSS before sending
 
