@@ -4,6 +4,9 @@
 
 This is a really simple and easy to create and maintain HTML email template system. It should make creating and managing our email templates easier, while also providing modern, responsive emails that will render and perform better across devices.
 
+# Tested on all email clients
+[Litmus test results](https://litmus.com/checklist/emails/public/233ded7)
+
 # How to create a new template
 
 Copy the `email.html` master template and name it as a new file, such as `email-password-reset.html` for example.
