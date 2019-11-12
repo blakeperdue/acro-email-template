@@ -94,6 +94,15 @@ table[class=body] .article {
     background-color: #0245CC !important;
     border-color: #0245CC !important;
   }
+
+  .btn-error table td:hover {
+    background-color: #CC313D !important;
+  }
+
+  .btn-primary a:hover {
+    background-color: #CC313D !important;
+    border-color: #CC313D !important;
+  }
 }
 </style>
   </head>
@@ -120,7 +129,10 @@ table[class=body] .article {
                     <tr>
                       <td style="font-family: sans-serif; font-size: 18px; vertical-align: top;" valign="top">
                         <p style="font-family: sans-serif; font-size: 18px; font-weight: normal; margin: 0; margin-bottom: 15px;">Greetings!</p>
-                        <p style="font-family: sans-serif; font-size: 18px; font-weight: normal; margin: 0; margin-bottom: 15px;">The spreadsheet you uploaded to <b>Acrobatiq Administer</b> has been processed. Please take a minute to review your file for errors.</p>
+                        <p style="font-family: sans-serif; font-size: 18px; font-weight: normal; margin: 0; margin-bottom: 15px;">The spreadsheet you uploaded to <b>Acrobatiq Administer</b> has been processed.</p>
+                        <ul style="font-family: sans-serif; font-size: 18px; font-weight: normal; margin: 0; margin-bottom: 15px;">
+                            <li style="list-style-position: inside; margin-left: 5px;">108 rows successfully processed.</li>
+                        </ul>
                         <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; box-sizing: border-box; width: 100%;" width="100%">
                           <tbody>
                             <tr>
@@ -128,7 +140,7 @@ table[class=body] .article {
                                 <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: auto;">
                                   <tbody>
                                     <tr>
-                                      <td style="font-family: sans-serif; font-size: 18px; vertical-align: top; border-radius: 5px; text-align: center; background-color: #0A88E5;" valign="top" align="center" bgcolor="#0A88E5"> <a href="http://administer.acrobatiq.com/upload/{{upload_id}}" target="_blank" style="border: solid 1px #0A88E5; border-radius: 5px; box-sizing: border-box; cursor: pointer; display: inline-block; font-size: 18px; font-weight: bold; margin: 0; padding: 12px 25px; text-decoration: none; text-transform: capitalize; background-color: #0A88E5; border-color: #0A88E5; color: #ffffff;">Review Your Upload</a> </td>
+                                      <td style="font-family: sans-serif; font-size: 18px; vertical-align: top; border-radius: 5px; text-align: center; background-color: #0A88E5;" valign="top" align="center" bgcolor="#0A88E5"><a href="http://administer.acrobatiq.com/upload/{{upload_id}}" target="_blank" style="border: solid 1px #0A88E5; border-radius: 5px; box-sizing: border-box; cursor: pointer; display: inline-block; font-size: 18px; font-weight: bold; margin: 0; padding: 12px 25px; text-decoration: none; background-color: #0A88E5; border-color: #0A88E5; color: #ffffff;">View your upload</a> </td>
                                     </tr>
                                   </tbody>
                                 </table>
@@ -136,7 +148,8 @@ table[class=body] .article {
                             </tr>
                           </tbody>
                         </table>
-                        <p style="font-family: sans-serif; font-size: 18px; font-weight: normal; margin: 0; margin-bottom: 15px;">We likely need some language in here around errors if we can do that. We should reword this email and have a fork here for files with no errors and files with errors.</p>
+                        <p style="font-family: sans-serif; font-size: 18px; font-weight: normal; margin: 0; margin-bottom: 15px;">Your data has been processed successfully and no further action is needed.</p>
+                        <p class="text-small" style="font-family: sans-serif; font-weight: normal; margin: 0; margin-bottom: 15px; font-size: 15px; color: #596F85;"><b>File:</b> app-state_div13_class491.xlsx<br><b>Uploaded:</b> 11/15/2019</p>
                         <p style="font-family: sans-serif; font-size: 18px; font-weight: normal; margin: 0; margin-bottom: 15px;">- The Acrobatiq Team</p>
                       </td>
                     </tr>

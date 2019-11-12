@@ -213,6 +213,15 @@
         font-weight: bold;
       }
 
+      .text-code {
+        font-family: Courier, 'Courier New', monospace;
+      }
+
+      .text-small {
+        font-size: 15px;
+        color: #596F85;
+      }
+
       .last {
         margin-bottom: 0; 
       }
@@ -359,7 +368,7 @@
     </style>
   </head>
   <body class="">
-    <span class="preheader">Activate your new account</span>
+    <span class="preheader">Your file was processed</span>
     <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
       <tr>
         <td>&nbsp;</td>
@@ -381,15 +390,19 @@
                     <tr>
                       <td>
                         <p>Greetings!</p>
-                        <p>You have been invited to use <b>Acrobatiq Administer</b>. This tool is used for rostering students into Acrobatiq and running data reports.</p>
-                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+                        <p>The spreadsheet you uploaded to <b>Acrobatiq Administer</b> has been processed. </p>
+                        <ul>
+                          <li>108 rows successfully processed.</li>
+                          <li class="error-text"><b>13 rows had errors!</b></li>
+                        </ul>
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-error">
                           <tbody>
                             <tr>
                               <td align="left">
                                 <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                                   <tbody>
                                     <tr>
-                                      <td> <a href="http://administer.acrobatiq.com/join/{{invite_code}}" target="_blank">Activate Your Account</a> </td>
+                                      <td><a href="http://administer.acrobatiq.com/upload/{{upload_id}}" target="_blank">View and fix errors</a> </td>
                                     </tr>
                                   </tbody>
                                 </table>
@@ -397,7 +410,8 @@
                             </tr>
                           </tbody>
                         </table>
-                        <p>You will only see the features that have been approved for your account.</p>
+                        <p>You must review and correct the errors, otherwise the data with errors will not be saved.</p>
+                        <p class="text-small"><b>File:</b> app-state_div13_class491.xlsx<br><b>Uploaded:</b> 11/15/2019</p>
                         <p>- The Acrobatiq Team</p>
                       </td>
                     </tr>

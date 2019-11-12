@@ -94,11 +94,20 @@ table[class=body] .article {
     background-color: #0245CC !important;
     border-color: #0245CC !important;
   }
+
+  .btn-error table td:hover {
+    background-color: #CC313D !important;
+  }
+
+  .btn-primary a:hover {
+    background-color: #CC313D !important;
+    border-color: #CC313D !important;
+  }
 }
 </style>
   </head>
   <body class="" style="background-color: #F2F4F9; font-family: sans-serif; -webkit-font-smoothing: antialiased; font-size: 18px; line-height: 1.5; color: #40404C; margin: 0; padding: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
-    <span class="preheader" style="color: transparent; display: none; height: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; visibility: hidden; width: 0;">Activate your new account</span>
+    <span class="preheader" style="color: transparent; display: none; height: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; visibility: hidden; width: 0;">Your file was processed</span>
     <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #F2F4F9; width: 100%;" width="100%" bgcolor="#F2F4F9">
       <tr>
         <td style="font-family: sans-serif; font-size: 18px; vertical-align: top;" valign="top">&nbsp;</td>
@@ -120,15 +129,19 @@ table[class=body] .article {
                     <tr>
                       <td style="font-family: sans-serif; font-size: 18px; vertical-align: top;" valign="top">
                         <p style="font-family: sans-serif; font-size: 18px; font-weight: normal; margin: 0; margin-bottom: 15px;">Greetings!</p>
-                        <p style="font-family: sans-serif; font-size: 18px; font-weight: normal; margin: 0; margin-bottom: 15px;">You have been invited to use <b>Acrobatiq Administer</b>. This tool is used for rostering students into Acrobatiq and running data reports.</p>
-                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; box-sizing: border-box; width: 100%;" width="100%">
+                        <p style="font-family: sans-serif; font-size: 18px; font-weight: normal; margin: 0; margin-bottom: 15px;">The spreadsheet you uploaded to <b>Acrobatiq Administer</b> has been processed. </p>
+                        <ul style="font-family: sans-serif; font-size: 18px; font-weight: normal; margin: 0; margin-bottom: 15px;">
+                          <li style="list-style-position: inside; margin-left: 5px;">108 rows successfully processed.</li>
+                          <li class="error-text" style="list-style-position: inside; margin-left: 5px; color: #E71D3A; font-size: 18px; font-weight: bold;"><b>13 rows had errors!</b></li>
+                        </ul>
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-error" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; box-sizing: border-box; width: 100%;" width="100%">
                           <tbody>
                             <tr>
                               <td align="left" style="font-family: sans-serif; font-size: 18px; vertical-align: top; padding-bottom: 15px;" valign="top">
                                 <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: auto;">
                                   <tbody>
                                     <tr>
-                                      <td style="font-family: sans-serif; font-size: 18px; vertical-align: top; border-radius: 5px; text-align: center; background-color: #0A88E5;" valign="top" align="center" bgcolor="#0A88E5"> <a href="http://administer.acrobatiq.com/join/{{invite_code}}" target="_blank" style="border: solid 1px #0A88E5; border-radius: 5px; box-sizing: border-box; cursor: pointer; display: inline-block; font-size: 18px; font-weight: bold; margin: 0; padding: 12px 25px; text-decoration: none; text-transform: capitalize; background-color: #0A88E5; border-color: #0A88E5; color: #ffffff;">Activate Your Account</a> </td>
+                                      <td style="font-family: sans-serif; font-size: 18px; vertical-align: top; border-radius: 5px; text-align: center; background-color: #E71D3A;" valign="top" align="center" bgcolor="#E71D3A"><a href="http://administer.acrobatiq.com/upload/{{upload_id}}" target="_blank" style="border: solid 1px #0A88E5; border-radius: 5px; box-sizing: border-box; cursor: pointer; display: inline-block; font-size: 18px; font-weight: bold; margin: 0; padding: 12px 25px; text-decoration: none; background-color: #E71D3A; border-color: #E71D3A; color: #ffffff;">View and fix errors</a> </td>
                                     </tr>
                                   </tbody>
                                 </table>
@@ -136,7 +149,8 @@ table[class=body] .article {
                             </tr>
                           </tbody>
                         </table>
-                        <p style="font-family: sans-serif; font-size: 18px; font-weight: normal; margin: 0; margin-bottom: 15px;">You will only see the features that have been approved for your account.</p>
+                        <p style="font-family: sans-serif; font-size: 18px; font-weight: normal; margin: 0; margin-bottom: 15px;">You must review and correct the errors, otherwise the data with errors will not be saved.</p>
+                        <p class="text-small" style="font-family: sans-serif; font-weight: normal; margin: 0; margin-bottom: 15px; font-size: 15px; color: #596F85;"><b>File:</b> app-state_div13_class491.xlsx<br><b>Uploaded:</b> 11/15/2019</p>
                         <p style="font-family: sans-serif; font-size: 18px; font-weight: normal; margin: 0; margin-bottom: 15px;">- The Acrobatiq Team</p>
                       </td>
                     </tr>

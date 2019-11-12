@@ -34,11 +34,12 @@
         border-collapse: separate;
         mso-table-lspace: 0pt;
         mso-table-rspace: 0pt;
-        width: 100%; }
-        table td {
-          font-family: sans-serif;
-          font-size: 18px;
-          vertical-align: top; 
+        width: 100%; 
+      }
+      table td {
+        font-family: sans-serif;
+        font-size: 18px;
+        vertical-align: top; 
       }
 
       /* -------------------------------------
@@ -97,13 +98,13 @@
         text-align: center;
         width: 100%; 
       }
-        .footer td,
-        .footer p,
-        .footer span,
-        .footer a {
-          color: #596F85;
-          font-size: 12px;
-          text-align: center; 
+      .footer td,
+      .footer p,
+      .footer span,
+      .footer a {
+        color: #596F85;
+        font-size: 12px;
+        text-align: center; 
       }
 
       /* -------------------------------------
@@ -137,11 +138,11 @@
         margin: 0;
         margin-bottom: 15px; 
       }
-        p li,
-        ul li,
-        ol li {
-          list-style-position: inside;
-          margin-left: 5px; 
+      p li,
+      ul li,
+      ol li {
+        list-style-position: inside;
+        margin-left: 5px; 
       }
 
       a {
@@ -160,25 +161,26 @@
         .btn table {
           width: auto; 
       }
-        .btn table td {
-          background-color: #ffffff;
-          border-radius: 5px;
-          text-align: center; 
+
+      .btn table td {
+        background-color: #ffffff;
+        border-radius: 5px;
+        text-align: center; 
       }
-        .btn a {
-          background-color: #ffffff;
-          border: solid 1px #0A88E5;
-          border-radius: 5px;
-          box-sizing: border-box;
-          color: #0A88E5;
-          cursor: pointer;
-          display: inline-block;
-          font-size: 18px;
-          font-weight: bold;
-          margin: 0;
-          padding: 12px 25px;
-          text-decoration: none;
-          text-transform: capitalize; 
+      
+      .btn a {
+        background-color: #ffffff;
+        border: solid 1px #0A88E5;
+        border-radius: 5px;
+        box-sizing: border-box;
+        color: #0A88E5;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0;
+        padding: 12px 25px;
+        text-decoration: none;
       }
 
       .btn-primary table td {
@@ -191,9 +193,35 @@
         color: #ffffff; 
       }
 
+      .btn-error table td {
+        background-color: #E71D3A; 
+      }
+
+      .btn-error a {
+        background-color: #E71D3A;
+        border-color: #E71D3A;
+        color: #ffffff; 
+      }
+
+
       /* -------------------------------------
           OTHER STYLES THAT MIGHT BE USEFUL
       ------------------------------------- */
+      .error-text {
+        color: #E71D3A;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .text-code {
+        font-family: Courier, 'Courier New', monospace;
+      }
+
+      .text-small {
+        font-size: 15px;
+        color: #596F85;
+      }
+
       .last {
         margin-bottom: 0; 
       }
@@ -327,6 +355,13 @@
         .btn-primary a:hover {
           background-color: #0245CC !important;
           border-color: #0245CC !important; 
+        } 
+        .btn-error table td:hover {
+          background-color: #CC313D !important; 
+        }
+        .btn-primary a:hover {
+          background-color: #CC313D !important;
+          border-color: #CC313D !important; 
         } 
       }
 
