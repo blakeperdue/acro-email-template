@@ -34,12 +34,11 @@
         border-collapse: separate;
         mso-table-lspace: 0pt;
         mso-table-rspace: 0pt;
-        width: 100%; 
-      }
-      table td {
-        font-family: sans-serif;
-        font-size: 18px;
-        vertical-align: top; 
+        width: 100%; }
+        table td {
+          font-family: sans-serif;
+          font-size: 18px;
+          vertical-align: top; 
       }
 
       /* -------------------------------------
@@ -98,13 +97,13 @@
         text-align: center;
         width: 100%; 
       }
-      .footer td,
-      .footer p,
-      .footer span,
-      .footer a {
-        color: #596F85;
-        font-size: 12px;
-        text-align: center; 
+        .footer td,
+        .footer p,
+        .footer span,
+        .footer a {
+          color: #596F85;
+          font-size: 12px;
+          text-align: center; 
       }
 
       /* -------------------------------------
@@ -138,11 +137,11 @@
         margin: 0;
         margin-bottom: 15px; 
       }
-      p li,
-      ul li,
-      ol li {
-        list-style-position: inside;
-        margin-left: 5px; 
+        p li,
+        ul li,
+        ol li {
+          list-style-position: inside;
+          margin-left: 5px; 
       }
 
       a {
@@ -161,26 +160,25 @@
         .btn table {
           width: auto; 
       }
-
-      .btn table td {
-        background-color: #ffffff;
-        border-radius: 5px;
-        text-align: center; 
+        .btn table td {
+          background-color: #ffffff;
+          border-radius: 5px;
+          text-align: center; 
       }
-      
-      .btn a {
-        background-color: #ffffff;
-        border: solid 1px #0A88E5;
-        border-radius: 5px;
-        box-sizing: border-box;
-        color: #0A88E5;
-        cursor: pointer;
-        display: inline-block;
-        font-size: 18px;
-        font-weight: bold;
-        margin: 0;
-        padding: 12px 25px;
-        text-decoration: none;
+        .btn a {
+          background-color: #ffffff;
+          border: solid 1px #0A88E5;
+          border-radius: 5px;
+          box-sizing: border-box;
+          color: #0A88E5;
+          cursor: pointer;
+          display: inline-block;
+          font-size: 18px;
+          font-weight: bold;
+          margin: 0;
+          padding: 12px 25px;
+          text-decoration: none;
+          text-transform: capitalize; 
       }
 
       .btn-primary table td {
@@ -193,17 +191,6 @@
         color: #ffffff; 
       }
 
-      .btn-error table td {
-        background-color: #E71D3A; 
-      }
-
-      .btn-error a {
-        background-color: #E71D3A;
-        border-color: #E71D3A;
-        color: #ffffff; 
-      }
-
-
       /* -------------------------------------
           OTHER STYLES THAT MIGHT BE USEFUL
       ------------------------------------- */
@@ -212,16 +199,7 @@
         font-size: 18px;
         font-weight: bold;
       }
-
-      .text-code {
-        font-family: Courier, 'Courier New', monospace;
-      }
-
-      .text-small {
-        font-size: 15px;
-        color: #596F85;
-      }
-
+      
       .last {
         margin-bottom: 0; 
       }
@@ -356,13 +334,6 @@
           background-color: #0245CC !important;
           border-color: #0245CC !important; 
         } 
-        .btn-error table td:hover {
-          background-color: #0674C5 !important; 
-        }
-        .btn-primary a:hover {
-          background-color: #0674C5 !important;
-          border-color: #0674C5 !important; 
-        } 
       }
 
     </style>
@@ -390,10 +361,10 @@
                     <tr>
                       <td>
                         <p>Greetings!</p>
-                        <p>The report you requested in <b>Acrobatiq Administer</b> has been completed. You can access the results below.</p>
+                        <p>The spreadsheet you uploaded to <b>Acrobatiq Administer</b> has been processed. </p>
                         <ul>
-                          <li><b>Module Participation Report</b></li>
-                          <li>Requested on 02/07/2020</li>
+                          <li>108 rows were successfully processed</li>
+                          <li class="error-text"><b>13 rows had errors</b></li>
                         </ul>
                         <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
                           <tbody>
@@ -402,7 +373,7 @@
                                 <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                                   <tbody>
                                     <tr>
-                                      <td><a href="http://administer.acrobatiq.com/report/{{report_id}}" target="_blank">Download report</a></td>
+                                      <td><a href="http://administer.acrobatiq.com/upload/{{upload_id}}" target="_blank">Review Your Upload</a> </td>
                                     </tr>
                                   </tbody>
                                 </table>
@@ -410,6 +381,7 @@
                             </tr>
                           </tbody>
                         </table>
+                        <p>We likely need some language in here around errors if we can do that. We should reword this email and have a fork here for files with no errors and files with errors.</p>
                         <p>- The Acrobatiq Team</p>
                       </td>
                     </tr>
